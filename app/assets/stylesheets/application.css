@@ -1,4 +1,7 @@
 /*
+ *= require font-awesome
+ */
+/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -19,7 +22,10 @@
  background-color:  	#f7f7f7;
  }
 
- 
+* {
+  box-sizing: border-box;
+}
+
 
  /* Add a green background colour for nav background */
  .topnav {
@@ -48,3 +54,84 @@
    background-color: #4CAF50;
    color: white;
  }
+
+/* Input container style */
+.topnav .search-container{
+  float: left;
+}
+
+/* Style the input field inside the container */
+.topnav input[type=text]{
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/* Style the search field */
+form.search-field input[type=text]{
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float:left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the button inside the input container */
+form.search-field button{
+  float: left;
+  width: 9%;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /*prevent double borders*/
+  cursor: pointer;
+}
+
+form.search-field button:hover{
+  background: #32CD32;
+}
+
+.topnav .serach-container button:hover{
+  background: #ccc;
+}
+
+/* Style the facebook icon */
+.fa-facebook{
+  color:white;
+  /* background-image: linear-gradient(to bottom, transparent 20%, white 20%, white 93%, transparent 93%);
+  background-size: 100%;
+  background: 70%;
+  background-repeat: no-repeat; */
+}
+
+/* Clear floats */
+form.search-field::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px){
+  .topnav .search-container{
+    float: none;
+  }
+
+  .topnav a, .topnav input[type=text], .topnav .search button{
+    float:none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin; 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text]{
+    border: 1px solid #ccc;
+  }
+}
