@@ -18,6 +18,11 @@ class PostsController < ApplicationController
     @posts = current_user.posts.all.order(created_at: 'DESC')
   end
 
+  def wall
+  @posts = Post.where(wall_id: 1)
+  end
+
+
   private
 
   def post_params

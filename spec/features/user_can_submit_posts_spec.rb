@@ -18,4 +18,5 @@ RSpec.feature "Post", type: :feature do
 
     expect("A later beep beep").to appear_before("Beep beep")
   end
+
 end

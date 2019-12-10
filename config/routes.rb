@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   resources :posts
   root 'posts#index'
 
+ get '/wall_test', :to => 'posts#wall'
+
 end
