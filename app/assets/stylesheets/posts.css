@@ -4,6 +4,7 @@
   margin: 5vh 5vw;
 }
 
+/* individual posts */
 .post {
   margin: 2vh 0vw;
   padding: 2vh 2vw;
@@ -20,4 +21,34 @@
 .btn:hover {
    background-color: #008000;
  }
+
+/* modal */
+.modal-content {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#SaveUpdate {
+  margin: 0;
+}
+
+#SaveUpdate:hover {
+   background-color: #008000;
+ }
+
+.modal-header {
+  padding: 0;
+  border: none;
+}
+
+.form-group {
+  margin: 2vh 0vw;
+}
+/* .md-form.mb-5 { */
+  /* background-color: pink; */
+/* } */
+
 
