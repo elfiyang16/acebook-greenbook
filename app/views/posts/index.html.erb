@@ -1,5 +1,5 @@
 <div id="new-post" class="post">
-  <p><%= current_user.username %><p>
+  <h4>New post</h4>
   <%= form_for @post do |form| %>
     <p><%= form.text_area :message, placeholder: "What's on your mind?" %></p>
     <p><%= form.submit "Submit" %></p>
