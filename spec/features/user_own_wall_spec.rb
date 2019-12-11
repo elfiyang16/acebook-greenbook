@@ -3,9 +3,9 @@
 require 'rails_helper'
 
 RSpec.feature 'Own Wall', type: :feature do
-  before(:all) do
+  before(:each) do
     FactoryBot.define do
-      factory :wall_post do
+      factory :post do
         message { 'I like writing on walls' }
         user_id  { 1 }
         wall_id { 1 }

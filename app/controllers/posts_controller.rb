@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   end
 
   def wall
-  @posts = Post.where(wall_id: 1)
+    @posts = Post.where(wall_id: 1)
   end
 
 
