@@ -8,7 +8,5 @@ Rails.application.routes.draw do
   resources:posts
   root 'posts#index'
 
- get '/wall_test', :to => 'posts#wall_read'
-post '/wall_test', :to => 'posts#wall_write'
 
 end

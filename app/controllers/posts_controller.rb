@@ -34,19 +34,6 @@ class PostsController < ApplicationController
     @posts = current_user.posts.all.order(created_at: 'DESC')
   end
 
-  def wall_read
-    wall_id = params[:id]
-    @post = current_user.posts.new
-    @posts = Post.where(wall_id: current_user.id)
-  end
-
-  def wall_write
-    # @post = current_user.posts.create(post_params)
-    @wall_id = params[:id]
-    redirect_to :wall_read
-  end
-
-
   private
 
   def post_params
