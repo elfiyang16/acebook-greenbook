@@ -5,14 +5,14 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.create(post_params)
     # redirect_to posts_url
-    redirect_to user_posts_url
+    redirect_to posts_url
   end
 
   def edit
     @user = current_user
     @post = Post.find(params[:id])
     @post.update(post_params)
-    redirect_to user_posts_url
+    redirect_to posts_url
   end
 
   def index
