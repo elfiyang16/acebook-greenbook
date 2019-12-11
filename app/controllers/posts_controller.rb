@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.create(post_params)
+    # redirect_to posts_url
     redirect_to posts_url
   end
 
@@ -17,6 +18,7 @@ class PostsController < ApplicationController
   def index
     @post = current_user.posts.new
     @user = current_user
+    @user_id = current_user.id
     @username = current_user.username
     @posts = Post.all.order(created_at: :desc)
   end
