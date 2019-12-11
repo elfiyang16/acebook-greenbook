@@ -30,6 +30,10 @@ textarea {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+.post_datetime {
+  font-size: 12px;
+}
+
 /* 'edit' button */
 .btn {
  background-color: #4CAF50;
