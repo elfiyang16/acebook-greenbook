@@ -1,9 +1,10 @@
-<%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
-
-  <%= form.submit "Submit" %>
-<% end %>
+<div id="new-post" class="post">
+  <p><%= current_user.username %><p>
+  <%= form_for @post do |form| %>
+    <p><%= form.text_area :message, placeholder: "What's on your mind?" %></p>
+    <p><%= form.submit "Submit" %></p>
+  <% end %>
+</div>
 
 <div id="posts-feed">
   <% @posts.each do |post| %>
