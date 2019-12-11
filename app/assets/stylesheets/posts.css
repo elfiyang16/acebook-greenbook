@@ -1,0 +1,23 @@
+#posts-feed {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 5vw;
+}
+
+.post {
+  margin: 2vh 0vw;
+  padding: 2vh 2vw;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* 'edit' button */
+.btn {
+ background-color: #4CAF50;
+}
+
+.btn:hover {
+   background-color: #008000;
+ }
+
