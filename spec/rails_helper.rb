@@ -53,11 +53,15 @@ RSpec.configure do |config|
   # It makes it use the chrome browser, but can also be
   #  configured to user Firefox, etc.
   Capybara.register_driver :selenium do |app|
-    # options = Selenium::WebDriver::Chrome::Options.new(args: %w[no-sandbox headless disable-gpu disable-dev-shm-usage])
-    Capybara::Selenium::Driver.new(app, browser: :firefox)
+    options = Selenium::WebDriver::Firefox::Options.new
+    options.add_argument('-headless')
+    Capybara::Selenium::Driver.new(app, browser: :firefox, options: options)
   end
 
-  Capybara.javascript_driver = :selenium
+  # To set a different driver for javascript, uncomment the below (and change
+  # :selenium to chosen driver)
+  # Capybara.javascript_driver = :selenium
+
   # RSpec Rails can automatically mix in different behaviours to your tests
   # based on their file location, for example enabling you to call `get` and
   # `post` in specs under `spec/controllers`.
@@ -79,16 +83,15 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   # reset database after each test iteration
-#   config.before(:suite) do
-#     DatabaseCleaner.strategy = :transaction
-#     DatabaseCleaner.clean_with(:truncation)
-#   end
-#
-#   config.before(:each) do
-#     DatabaseCleaner.start
-#   end
-#
-#   config.after(:each) do
-#     DatabaseCleaner.clean
-#   end
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation, { reset_ids: true }
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.clean
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
 end
