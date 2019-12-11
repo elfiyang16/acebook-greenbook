@@ -24,36 +24,51 @@
  padding: 0;
  }
 
-
-
-
- /* Add a green background colour for nav background */
+ /* Navbar */
  .topnav {
  background-color: #008000;
- overflow: hidden;
+ display: flex;
+ flex-direction: row;
+ color: white;
  }
 
- /* Style the links inside the navbar */
- .topnav a {
-   float: left;
-   color: #f2f2f2;
+ /* Items inside navbar */
+.nav_item {
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
    font-size: 17px;
+   min-width: 10vw;
+   margin: 0;
  }
 
- /* Change the colour of the links on hover */
- .topnav a:hover {
-   background-color: #006400;
-   color: white;
- }
+.nav_item a {
+  color: white;
+}
 
- /* Add a colour to the active/current link */
- .topnav a.active {
-   background-color: #4CAF50;
-   color: white;
- }
+#current_user {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Change the colour of container around navbar link on hover */
+.topnav .nav_item:hover {
+ background-color: #006400;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+/* Prevent underline on hover */
+.topnav a:hover {
+  text-decoration: none;
+}
+
+/* Add a colour to the active/current navbar link */
+.nav_item.active {
+ background-color: #4CAF50;
+ color: white;
+ font-weight: bold;
+}
 
 #login-box {
   position: relative;
