@@ -79,16 +79,16 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   # reset database after each test iteration
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
-  end
-
-  config.before(:each) do
-    DatabaseCleaner.start
-  end
-
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
+#   config.before(:suite) do
+#     DatabaseCleaner.strategy = :transaction
+#     DatabaseCleaner.clean_with(:truncation)
+#   end
+#
+#   config.before(:each) do
+#     DatabaseCleaner.start
+#   end
+#
+#   config.after(:each) do
+#     DatabaseCleaner.clean
+#   end
 end
