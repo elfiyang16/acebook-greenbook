@@ -31,14 +31,6 @@
   flex-direction: column;
 }
 
-#SaveUpdate {
-  margin: 0;
-}
-
-#SaveUpdate:hover {
-   background-color: #008000;
- }
-
 .modal-header {
   padding: 0;
   border: none;
@@ -47,8 +39,15 @@
 .form-group {
   margin: 2vh 0vw;
 }
-/* .md-form.mb-5 { */
-  /* background-color: pink; */
-/* } */
+
+/* submit button in modal */
+#SaveUpdate {
+  margin: 0;
+}
+
+#SaveUpdate:hover {
+   background-color: #008000;
+ }
+
 
 
