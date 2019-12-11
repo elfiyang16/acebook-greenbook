@@ -4,6 +4,7 @@ RSpec.feature "Post", type: :feature do
   scenario "Can submit posts and view them" do
 
     sign_up_user
+    visit '/'
     make_post('Beep beep')
     expect(page).to have_content("Beep beep")
     expect(page).to have_content("Robot")
