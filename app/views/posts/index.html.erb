@@ -1,7 +1,7 @@
 <%= form_for @post do |form| %>
   <%= form.label :message %>
   <%= form.text_area :message %>
-
+  <%= form.hidden_field :wall_id, :value => 0 %>
   <%= form.submit "Submit" %>
 <% end %>
 
@@ -36,8 +36,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <!-- <button type="Submit" value="Submit" form="editForm" class="btn btn-default" data-dismiss="modal">Save</button> -->
-      </div>
+    </div>
 
     </div>
 

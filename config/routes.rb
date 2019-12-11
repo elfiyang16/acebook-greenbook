@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   root 'posts#index'
 
  get '/wall_test', :to => 'posts#wall_read'
+post '/wall_test', :to => 'posts#wall_write'
 
 end

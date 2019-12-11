@@ -28,9 +28,9 @@ RSpec.feature 'Own Wall', type: :feature do
   scenario 'User can write posts on own wall' do
     sign_up_user
     visit '/wall_test'
-    fill_in 'new_post',with: "Hello my wall post"
+    fill_in 'post_message',with: "A test message from ali"
     click_button "Submit"
-    expect(page).to have_content('Hello my wall post')
+    expect(page).to have_content('A test message from ali')
 
   end
 end
