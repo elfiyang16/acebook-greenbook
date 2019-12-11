@@ -18,8 +18,8 @@ class PostsController < ApplicationController
     @posts = current_user.posts.all.order(created_at: 'DESC')
   end
 
-  def wall
-  
+  def wall_read
+    @post = current_user.posts.new
     @posts = Post.where(wall_id: current_user.id)
   end
 
