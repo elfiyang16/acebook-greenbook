@@ -1,5 +1,8 @@
 $(document).ready(function() {
   $( "[id^=post_edit]" ).click(function() {
+    if(post.user_id != current_user.id){
+       document.getElementById("id^=post_edit]").innnerHTML="You are not my owner!"; 
+    } else {
     // get id from div above
     var post_id = this.id.split("_");
     var post_div_id = "#post_text_" + post_id[2];
@@ -8,6 +11,7 @@ $(document).ready(function() {
     $("#editForm").attr("action",post_edit_url)
     $(".form-control").val($(post_div_id).text())
 
+  }
   });
 
   document.addEventListener('keydown', function(e) {

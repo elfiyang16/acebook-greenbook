@@ -11,8 +11,15 @@
     <p><%= post.user.username %></p>
     <p><%= post.created_at %></p>
     <div id="post_text_<%=post.id%>"><%= simple_format(post.message) %></div>
-    <% if (@user.id == post.user_id) %>
+    <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
       <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+    <% else @post.user_id != current_user.id %>
+    <% flash[:error] = "Don't touch other's posts! What do you want? " %>
+    <%# redirect_to(posts_url) && return %>
+
+
+
+
     <% end %>
   </div>
 <% end %>
