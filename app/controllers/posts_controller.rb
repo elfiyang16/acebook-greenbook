@@ -4,8 +4,13 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.create(post_params)
-    # redirect_to posts_url
-    redirect_to posts_url
+
+    if (@post.wall_id == 0)
+      redirect_to posts_url
+    else
+      @user_url = '/users/' + @post.wall_id.to_s
+      redirect_to @user_url
+    end
   end
 
   def edit
@@ -32,6 +37,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit( :message, :username)
+    params.require(:post).permit( :message, :wall_id)
   end
 end

@@ -1,1 +1,21 @@
-<%= @user.id %>
+<%= form_for @post do |form| %>
+  <%= form.label :message %>
+  <%= form.text_area :message %>
+<%= form.hidden_field :wall_id, :value => @user.id %>
+  <%= form.submit "Submit" %>
+<% end %>
+
+
+
+ <h2><%=  @user.username%>'s  wall </h2>
+
+<% @wall_posts.each do |post| %>
+  <ul>
+      <p><%= simple_format(post.message) %></p>
+      <p>Posted by: <%= post.user.username %></p>
+      <p><% time = post.created_at %></p>
+      <%= time.strftime("%k:%M on %d/%m/%Y") =%>
+      <p></p>
+      <br>
+  </ul>
+<% end %>

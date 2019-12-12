@@ -19,11 +19,6 @@ RSpec.describe PostsController, type: :controller do
     end
 
 
-    it "redirects to index" do
-      post :create, params: { post: { message: "Hello, world!" } }
-      expect(response).to redirect_to(posts_url)
-    end
-
     it "creates an entry in the database" do
       post :create, params: { post: { message: "Hello, world!" } }
       expect(Post.find_by(message: "Hello, world!")).to be
