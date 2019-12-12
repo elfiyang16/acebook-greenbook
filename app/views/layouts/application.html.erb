@@ -19,17 +19,30 @@
   <body>
     <header>
       <div class="topnav">
-        <a class="active" href="/">Home</a>
+        <p class="nav_item <%= "active" if current_page?(posts_path)%>">
+          <%= link_to "Home", posts_path %>
+        </p>
         <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path %>
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+          <p class="nav_item <%= "active" if current_page?(edit_user_registration_path)%>">
+            <%= link_to "Edit profile", edit_user_registration_path %></p>
+          <p class="nav_item <%= "active" if current_page?(post_path(:id))%>">
+            <%= link_to "Posts", post_path(:id) %>
+          </p>
+          <p id="current_user" class="nav_item">
+            Logged in as <strong><%= current_user.username %></strong>
+          </p>
+          <p class="nav_item">
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+          </p>
         <% else %>
-          <%= link_to "Sign up", new_user_registration_path%>
-          <%= link_to "Login", new_user_session_path  %>
+          <p class="nav_item <%= "active" if current_page?(new_user_registration_path)%>">
+            <%= link_to "Sign up", new_user_registration_path%>
+          </p>
+          <p class="nav_item <%= "active" if current_page?(new_user_session_path)%>">
+            <%= link_to "Login", new_user_session_path  %>
+          </p>
         <% end %>
       </div>
-
 
     </header>
     <% if notice %>

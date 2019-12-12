@@ -8,8 +8,6 @@ RSpec.feature 'Own Wall', type: :feature do
   scenario 'User can see posts on their own wall' do
     sign_up_user
 
-
-
         FactoryBot.define do
           factory :post do
 
@@ -31,6 +29,13 @@ RSpec.feature 'Own Wall', type: :feature do
     fill_in 'post_message',with: "A test message from ali"
     click_button "Submit"
     expect(page).to have_content('A test message from ali')
+  end
 
+  scenario 'Wall posts appear on newsfeed' do
+    sign_up_user
+    fill_in 'post_message',with: "A test message on the newsfeed"
+    click_button "Submit"
+    visit '/'
+    expect(page).to have_content('A test message on the newsfeed')
   end
 end
