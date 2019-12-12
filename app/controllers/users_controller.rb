@@ -6,4 +6,8 @@ class UsersController < ApplicationController
     @post = Post.new
     @wall_posts = Post.where(wall_id: params[:id]).order(created_at: 'DESC')
   end
+
+  def index
+    @users = User.all
+  end
 end
