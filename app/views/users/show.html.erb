@@ -7,13 +7,14 @@
 
 
 
- <h1> users own wall </h1>
+ <h1>  users own  wall </h1>
 
 <% @wall_posts.each do |post| %>
   <ul>
-  <b><p><li><%= @username %></li></p></b>
       <p><%= simple_format(post.message) %></p>
-      <p><%= post.created_at %></p>
+      <p>Posted by: <%= post.user.username %></p>
+      <p><% time = post.created_at %></p>
+      <%= time.strftime("%k:%M on %d/%m/%Y") =%>
       <p></p>
       <br>
   </ul>
