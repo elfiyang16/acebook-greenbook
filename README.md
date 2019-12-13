@@ -101,7 +101,7 @@ Users can see their own posts [L]
 
 ```
 
-##Processes observed
+## Processes observed
 
 ### standup
 Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was
@@ -129,7 +129,7 @@ Reviews were led by the day's Scrum-master post-sprint at the whiteboard.
 ### Demo
 Demos were scheduled and performed to the identified Product owners (coaches).
 
-![IMG_0147](https://user-images.githubusercontent.com/33905131/70787278-3e85ca00-1d86-11ea-88cd-ce9491e82083.jpg)
+![IMG_0147](https://user-images.githubusercontent.com/33905131/70825420-407a7800-1ddc-11ea-9667-cebbcf1313cb.jpg)
 
 ## Collaborators:
 
