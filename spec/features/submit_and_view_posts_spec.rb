@@ -1,13 +1,6 @@
 require 'rails_helper'
 
 RSpec.feature "Post", type: :feature do
- scenario "Can delete posts on newsfeed" do
-   sign_up_user
-   make_post('This is a journey into sound')
-   click_button "Delete"
-   expect(page).not_to have_content('This is a journey into sound')
- end
-
   scenario "Can submit posts and view them" do
 
     sign_up_user
