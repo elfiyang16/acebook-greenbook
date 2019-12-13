@@ -102,9 +102,9 @@ Users can see their own posts [L]
 ##Processes observed
 
 ### standup
-![IMG_0147](https://user-images.githubusercontent.com/33905131/70798642-6897b600-1d9f-11ea-9497-d5b63f338467.jpg)
 Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was rotated daily & pairs on a per task/sprint basis.)
 
+![IMG_0145](https://user-images.githubusercontent.com/33905131/70802830-71da5000-1daa-11ea-9dec-af479247412d.jpg)
 
 ### Work breakdown
 Old school workbreakdown was done using post-stick notes.
