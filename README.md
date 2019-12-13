@@ -1,9 +1,8 @@
 # AceBook - greenbook Ltd.
 
-<img width="1427" alt="Screenshot 2019-12-13 at 07 43 51" src="https://user-images.githubusercontent.com/33905131/70780128-a3d4bd80-1d7c-11ea-9017-af22aa718318.png">
-
 It’s a clone of a <ahem> well known social media platform. :laughing:
 
+![acebook_headline_image](https://user-images.githubusercontent.com/33905131/70824640-88989b00-1dda-11ea-8db5-7ecab1e4788e.gif)
 
 ## Quickstart
 ### Installation
@@ -33,6 +32,9 @@ heroku open
 ```
 
 ## Usages
+
+#### Visit: https://greenbook2019.herokuapp.com/
+
 ### Signup
 ![acebk_sign_up](https://user-images.githubusercontent.com/33905131/70789088-45164080-1d8a-11ea-8c9c-c596b3ab11d8.gif)
 
@@ -102,21 +104,31 @@ Users can see their own posts [L]
 ##Processes observed
 
 ### standup
+Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was
+rotated daily & pairs on a per task/sprint basis.)
+
 ![IMG_0145](https://user-images.githubusercontent.com/33905131/70787189-14cca300-1d86-11ea-8eab-c1fe7bf70ace.jpg)
 
 ### Work breakdown
+Old school workbreakdown was done using post-stick notes.
+
 ![IMG_0112](https://user-images.githubusercontent.com/33905131/70786780-4c871b00-1d85-11ea-835f-6e02d3c10276.jpg)
 
 ### estimation
+T-shirt sizing was used to our task estimation and reviewed post-sprint for effectiveness.
+
 ![IMG_0117](https://user-images.githubusercontent.com/33905131/70786901-8c4e0280-1d85-11ea-8519-19d2e5c40259.jpg)
 ![IMG_0124](https://user-images.githubusercontent.com/33905131/70786993-b6072980-1d85-11ea-8dca-0e792462ead3.jpg)
 
 ### reviews
-Review
+Reviews were led by the day's Scrum-master post-sprint at the whiteboard.
+
 ![IMG_0125](https://user-images.githubusercontent.com/33905131/70787075-ddf68d00-1d85-11ea-8085-45d0cfe93807.jpg)
 ![IMG_0142](https://user-images.githubusercontent.com/33905131/70787105-f070c680-1d85-11ea-86b0-09ed5b7982a3.jpg)
 
 ### Demo
+Demos were scheduled and performed to the identified Product owners (coaches).
+
 ![IMG_0147](https://user-images.githubusercontent.com/33905131/70787278-3e85ca00-1d86-11ea-88cd-ce9491e82083.jpg)
 
 ## Collaborators:
