@@ -39,6 +39,19 @@ class PostsController < ApplicationController
     @posts = current_user.posts.all.order(created_at: 'DESC')
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+
+    if @post.user_id != current_user.id # checks if user owns post
+      flash[:error] = "Cannot delete other user's posts"
+      redirect_to(posts_url) && return
+    end
+
+   @post.destroy
+   redirect_to posts_url
+  end
+
+
   private
 
   def post_params
