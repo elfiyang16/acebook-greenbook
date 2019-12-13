@@ -12,7 +12,7 @@ RSpec.feature "Edit", type: :feature do
     expect(page).to have_content("(Changed) Lorem ipsum.")
   end
 
-  scenario "A User cannot update someone else's post" do
+  scenario "A User cannot update someone else's post", js: true do
     sign_up_user
     visit '/'
     make_post("Beep beep")
@@ -20,6 +20,7 @@ RSpec.feature "Edit", type: :feature do
     sign_up_second_user
     visit '/'
     expect(page).to have_content("Beep beep")
-    expect(page).to_not have_button("Edit")
+    click_button "Edit"
+    expect(accept_alert).to eq("Sorry, this isn't your post, please don't edit it!")
   end
 end

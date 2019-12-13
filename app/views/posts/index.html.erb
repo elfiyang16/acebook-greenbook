@@ -5,19 +5,15 @@
   <%= form.submit "Submit" %>
 <% end %>
 
+<p  hidden id="current_user_id"><%= current_user.id %></p>
 
 <% @posts.each do |post| %>
   <div id="post_<%=post.id%>" data-name="custom-text">
+    <p  hidden id="post_user_<%=post.id%>"><%= post.user.id %></p>
     <p><%= post.user.username %></p>
     <p><%= post.created_at %></p>
     <div id="post_text_<%=post.id%>"><%= simple_format(post.message) %></div>
-    <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
-      <% if post.user_id != @user.id %>
-      <button type="button"  class="error_message">You are not my owner</button>
-      <% else %>
       <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
-      <% end %>
-    <% end %>
   </div>
 <% end %>
 

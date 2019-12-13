@@ -1,12 +1,20 @@
 $(document).ready(function() {
-  $( "[id^=post_edit]" ).click(function() {
-    // get id from div above
+  $( "[id^=post_edit]" ).click(function(event) {
     var post_id = this.id.split("_");
     var post_div_id = "#post_text_" + post_id[2];
-    var post_edit_url = "/posts/" + post_id[2] + "/edit"
-    //update modal form to new path and prepopulate wih exisiting value
-    $("#editForm").attr("action",post_edit_url)
-    $(".form-control").val($(post_div_id).text())
+    var element_user_id = "#post_user_" + post_id[2];
+
+    var post_user_id = $(element_user_id).text()
+    var current_user_id = $("#current_user_id").text()
+
+    if (post_user_id === current_user_id) {
+      var post_edit_url = "/posts/" + post_id[2] + "/edit"
+      //update modal form to new path and prepopulate wih exisiting value
+      $("#editForm").attr("action",post_edit_url)
+      $(".form-control").val($(post_div_id).text())
+    } else { alert("Sorry, this isn't your post, please don't edit it!")
+    event.stopPropagation();
+    }
   });
 
   document.addEventListener('keydown', function(e) {
