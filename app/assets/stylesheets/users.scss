@@ -1,3 +1,28 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.users_list {
+  display: flex;
+  flex-direction: column;
+  margin: 5vh 5vw;
+  justify-content: center;
+}
+
+.user_details {
+  margin: 2vh 0vw;
+  padding: 2vh 2vw;
+  background: #FFF;
+  border-radius: 2px;
+  width: 45vw;
+}
+
+.user_details a {
+  text-decoration: none;
+  color: #222;
+}
+
+.user_details a:hover {
+  font-weight: bold;
+}
+

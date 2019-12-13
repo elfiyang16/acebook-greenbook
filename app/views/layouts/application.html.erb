@@ -28,6 +28,9 @@
           <p class="nav_item <%= "active" if current_page?(post_path(:id))%>">
             <%= link_to "Posts", post_path(:id) %>
           </p>
+          <p class="nav_item <%= "active" if current_page?(users_path)%>">
+            <%= link_to "All users", users_path %>
+          </p>
           <p id="current_user" class="nav_item">
             Logged in as <strong><%= current_user.username %></strong>
           </p>
