@@ -102,31 +102,35 @@ Users can see their own posts [L]
 ##Processes observed
 
 ### standup
-![IMG_0145](https://user-images.githubusercontent.com/33905131/70787189-14cca300-1d86-11ea-8eab-c1fe7bf70ace.jpg)
+Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was rotated daily & pairs on a per task/sprint basis.)
+![IMG_0147](https://user-images.githubusercontent.com/33905131/70798642-6897b600-1d9f-11ea-9497-d5b63f338467.jpg)
 
 ### Work breakdown
+Old school workbreakdown was done using post-stick notes.
 ![IMG_0112](https://user-images.githubusercontent.com/33905131/70786780-4c871b00-1d85-11ea-835f-6e02d3c10276.jpg)
 
 ### estimation
+T-shirt sizing was used to our task estimation and reviewed post-sprint for effectiveness.
 ![IMG_0117](https://user-images.githubusercontent.com/33905131/70786901-8c4e0280-1d85-11ea-8519-19d2e5c40259.jpg)
 ![IMG_0124](https://user-images.githubusercontent.com/33905131/70786993-b6072980-1d85-11ea-8dca-0e792462ead3.jpg)
 
 ### reviews
-Review
+Reviews were led by the day's Scrum-master post-sprint at the whiteboard.
 ![IMG_0125](https://user-images.githubusercontent.com/33905131/70787075-ddf68d00-1d85-11ea-8085-45d0cfe93807.jpg)
 ![IMG_0142](https://user-images.githubusercontent.com/33905131/70787105-f070c680-1d85-11ea-86b0-09ed5b7982a3.jpg)
 
 ### Demo
-![IMG_0147](https://user-images.githubusercontent.com/33905131/70787278-3e85ca00-1d86-11ea-88cd-ce9491e82083.jpg)
+Demos were scheduled and performed to the identified Product owners (coaches).
+![IMG_0147](https://user-images.githubusercontent.com/33905131/70799132-b6f98480-1da0-11ea-9941-14fa81ecd234.jpg)
 
 ## Collaborators:
-
+The bestest hack-team in the land :+1
 | <a href="http://fvcproductions.com" target="_blank">**Elfi**</a> | <a href="http://fvcproductions.com" target="_blank">**Ben**</a> | <a href="http://fvcproductions.com" target="_blank">**Emma**</a> | <a href="http://fvcproductions.com" target="_blank">**Robert**</a> | <a href="http://fvcproductions.com" target="_blank">**Ali**</a> | <a href="http://fvcproductions.com" target="_blank">**Kehinde**</a> |
 | :---: |:---:| :---:| :---:| :---:| :---:|
 | [![Elfi](https://avatars3.githubusercontent.com/u/29664811?s=400&v=4)](http://fvcproductions.com)    | [![Ben](https://avatars3.githubusercontent.com/u/53790237?s=400&v=4)](http://fvcproductions.com) | [![Emma](https://avatars2.githubusercontent.com/u/47917612?s=400&v=4)](http://fvcproductions.com)  | [![Robert](https://avatars2.githubusercontent.com/u/42300628?s=400&v=4)](http://fvcproductions.com)  | [![Ali](https://avatars1.githubusercontent.com/u/54022123?s=400&v=4)](http://fvcproductions.com)  | [![Kehinde](https://avatars3.githubusercontent.com/u/33905131?s=460&v=4)](http://fvcproductions.com)  |
 | <a href="https://github.com/elfiyang16" target="_blank">`github.com/elfiyang16`</a> | <a href="https://github.com/Ben230" target="_blank">`github.com/Ben230`</a> | <a href="https://github.com/emmavanoss" target="_blank">`github.com/emmavanoss`</a> | <a href="https://github.com/robertwoolley99" target="_blank">`github.com/robertwoolley99`</a> | <a href="https://github.com/ali-phipps" target="_blank">`github.com/ali-phipps`</a> | <a href="https://github.com/KOlofinmoyin" target="_blank">`github.com/KOlofinmoyin`</a>
 
-### Collaboration & leadership:
+### Collaboration:
 1. Our card wall is here: https://trello.com/invite/b/26fYLxYl/499918c770f541d5f22c05bff8186244/greenboook-group
 2. Read blogposts of our adventures as a team at: https://medium.com/makers-greenbook
 ![acebk_blogposts](https://user-images.githubusercontent.com/33905131/70790663-75aba980-1d8d-11ea-8903-76831eeb46ef.gif)
