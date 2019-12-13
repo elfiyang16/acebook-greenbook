@@ -5,6 +5,7 @@ RSpec.feature "Edit", type: :feature do
     sign_up_user
     visit '/'
     make_post("Beep beep")
+    save_and_open_page
     click_button "Edit"
     fill_in "edit_message", with: "(Changed) Lorem ipsum."
     find('#SaveUpdate').click
