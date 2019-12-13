@@ -25,9 +25,6 @@
         <% if user_signed_in? %>
           <p class="nav_item <%= "active" if current_page?(edit_user_registration_path)%>">
             <%= link_to "Edit profile", edit_user_registration_path %></p>
-          <p class="nav_item <%= "active" if current_page?(post_path(:id))%>">
-            <%= link_to "Posts", post_path(:id) %>
-          </p>
           <p class="nav_item <%= "active" if current_page?(users_path)%>">
             <%= link_to "All users", users_path %>
           </p>
