@@ -99,7 +99,7 @@ Users can see their own posts [L]
 
 ```
 
-##Processes observed
+## Processes observed
 
 ### standup
 ![IMG_0145](https://user-images.githubusercontent.com/33905131/70802830-71da5000-1daa-11ea-9dec-af479247412d.jpg)
