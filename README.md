@@ -1,6 +1,6 @@
 # AceBook
 
-***GRAPHIC TO BE INSERTED HERE (include hyperlink in image)***
+<img width="1427" alt="Screenshot 2019-12-13 at 07 43 51" src="https://user-images.githubusercontent.com/33905131/70780128-a3d4bd80-1d7c-11ea-9017-af22aa718318.png">
 
 
 It’s a clone of a <ahem> well known social media platform.
@@ -23,7 +23,7 @@ brew install heroku
 ```
 Sign up to Heroku, once you have an Heroku account you can run below commands:
 ```
-heroku create 
+heroku create
 git push heroku master
 heroku rake db:migrate
 heroku open
