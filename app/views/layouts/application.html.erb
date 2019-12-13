@@ -55,6 +55,12 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <div id="modal-holder"></div>
+    <!-- Flash message -->
+    <div id="flash">
+      <% flash.each do |key, value| -%>
+      <div id="flash_<%= key %>"><%=h value %></div>
+      <% end %>
+    </div>
 
     <%= yield %>
 
