@@ -7,7 +7,6 @@ $(document).ready(function() {
     //update modal form to new path and prepopulate wih exisiting value
     $("#editForm").attr("action",post_edit_url)
     $(".form-control").val($(post_div_id).text())
-
   });
 
   document.addEventListener('keydown', function(e) {

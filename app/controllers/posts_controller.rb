@@ -16,8 +16,13 @@ class PostsController < ApplicationController
   def edit
     @user = current_user
     @post = Post.find(params[:id])
-    @post.update(post_params)
-    redirect_to posts_url
+
+    # if @post.user_id != current_user.id # checks if user owns post
+    #   flash[:error] = "Don't touch other's posts! What do you want? "
+    #   redirect_to(posts_url) && return
+    # end
+      @post.update(post_params)
+      redirect_to posts_url
   end
 
   def index
