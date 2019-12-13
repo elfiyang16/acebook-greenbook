@@ -11,7 +11,7 @@
   <% @posts.each do |post| %>
     <div id="post_<%=post.id%>" class="post" data-name="custom-text">
       <h4 class="post_username"><%= post.user.username %></h4>
-      <p class="post_datetime"><%= post.created_at.strftime("%e %b %Y at %H:%M") %></p>
+      <p class="post_datetime"><%= time_ago_in_words post.created_at.strftime("%e %b %Y at %H:%M") %> ago </p>
       <div id="post_text_<%=post.id%>" class="post-text"><%= simple_format(post.message) %></div>
       <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
         <% if post.user_id != @user.id %>
