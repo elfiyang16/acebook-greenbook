@@ -13,9 +13,7 @@ RSpec.feature "Post", type: :feature do
     sign_up_user
     make_post("Beep beep")
 
-    fill_in "Message", with: "A later beep beep"
-    click_button "Submit"
-
+    make_post("A later beep beep")
     expect("A later beep beep").to appear_before("Beep beep")
   end
 

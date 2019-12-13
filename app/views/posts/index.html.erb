@@ -1,25 +1,28 @@
-<%= form_for [@user,@post] do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
-  <%= form.hidden_field :wall_id, :value => 0 %>
-  <%= form.submit "Submit" %>
-<% end %>
+<div id="new-post" class="post">
+  <%= form_for [@user,@post] do |form| %>
+    <p><%= form.label :title, "Create post" %>
+    <p><%= form.text_area :message, placeholder:"What's on your mind?" %></p>
+    <p><%= form.hidden_field :wall_id, :value => 0 %></p>
+    <p><%= form.submit "Submit" %></p>
+  <% end %>
+</div>
 
-
-<% @posts.each do |post| %>
-  <div id="post_<%=post.id%>" data-name="custom-text">
-    <p><%= post.user.username %></p>
-    <p><%= post.created_at %></p>
-    <div id="post_text_<%=post.id%>"><%= simple_format(post.message) %></div>
-    <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
-      <% if post.user_id != @user.id %>
-      <button type="button"  class="error_message">You are not my owner</button>
-      <% else %>
-      <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+<div id="posts-feed">
+  <% @posts.each do |post| %>
+    <div id="post_<%=post.id%>" class="post" data-name="custom-text">
+      <h4 class="post_username"><%= post.user.username %></h4>
+      <p class="post_datetime"><%= time_ago_in_words post.created_at.strftime("%e %b %Y at %H:%M") %> ago </p>
+      <div id="post_text_<%=post.id%>" class="post-text"><%= simple_format(post.message) %></div>
+      <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
+        <% if post.user_id != @user.id %>
+          <button type="button" class="btn btn-info btn-sm error_message">You are not my owner</button>
+        <% else %>
+          <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
+</div>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
