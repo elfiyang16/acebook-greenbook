@@ -7,23 +7,21 @@
   <% end %>
 </div>
 
+<p  hidden id="current_user_id"><%= current_user.id %></p>
 <div id="posts-feed">
-  <% @posts.each do |post| %>
-    <div id="post_<%=post.id%>" class="post" data-name="custom-text">
-      <h4 class="post_username"><%= post.user.username %></h4>
-      <p class="post_datetime"><%= time_ago_in_words post.created_at.strftime("%e %b %Y at %H:%M") %> ago </p>
-      <div id="post_text_<%=post.id%>" class="post-text"><%= simple_format(post.message) %></div>
-      <% if (Time.now.to_i/60)- post.created_at.to_i/60 <= 10 %>
-        <% if post.user_id != @user.id %>
-          <button type="button" class="btn btn-info btn-sm error_message">You are not my owner</button>
-        <% else %>
-          <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
-        <% end %>
-      <% end %>
+<% @posts.each do |post| %>
+  <div id="post_<%=post.id%>" class="post" data-name="custom-text">
+    <p  hidden id="post_user_<%=post.id%>"><%= post.user.id %></p>
+    <h4 class="post_username"><%= post.user.username %></h4>
+    <p id="<%=post.id%>_created_at"><%= post.created_at %></p>
+    <div id="post_text_<%=post.id%>" class="post-text"><%= simple_format(post.message) %></div>
+      <button type="button" id="post_edit_<%=post.id%>" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Edit</button>
       <%= button_to "Delete", post, :method => :delete %>
-    </div>
-  <% end %>
+  </div>
+<% end %>
 </div>
+
+
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
