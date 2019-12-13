@@ -124,7 +124,6 @@ Demos were scheduled and performed to the identified Product owners (coaches).
 ![IMG_0147](https://user-images.githubusercontent.com/33905131/70799132-b6f98480-1da0-11ea-9941-14fa81ecd234.jpg)
 
 ## Collaborators:
-The bestest hack-team in the land :+1
 | <a href="http://fvcproductions.com" target="_blank">**Elfi**</a> | <a href="http://fvcproductions.com" target="_blank">**Ben**</a> | <a href="http://fvcproductions.com" target="_blank">**Emma**</a> | <a href="http://fvcproductions.com" target="_blank">**Robert**</a> | <a href="http://fvcproductions.com" target="_blank">**Ali**</a> | <a href="http://fvcproductions.com" target="_blank">**Kehinde**</a> |
 | :---: |:---:| :---:| :---:| :---:| :---:|
 | [![Elfi](https://avatars3.githubusercontent.com/u/29664811?s=400&v=4)](http://fvcproductions.com)    | [![Ben](https://avatars3.githubusercontent.com/u/53790237?s=400&v=4)](http://fvcproductions.com) | [![Emma](https://avatars2.githubusercontent.com/u/47917612?s=400&v=4)](http://fvcproductions.com)  | [![Robert](https://avatars2.githubusercontent.com/u/42300628?s=400&v=4)](http://fvcproductions.com)  | [![Ali](https://avatars1.githubusercontent.com/u/54022123?s=400&v=4)](http://fvcproductions.com)  | [![Kehinde](https://avatars3.githubusercontent.com/u/33905131?s=460&v=4)](http://fvcproductions.com)  |
