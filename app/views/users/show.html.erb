@@ -1,21 +1,23 @@
-<%= form_for @post do |form| %>
-  <%= form.label :message %>
-  <%= form.text_area :message %>
-<%= form.hidden_field :wall_id, :value => @user.id %>
-  <%= form.submit "Submit" %>
-<% end %>
+<h2 id="wall-name"><%=  @user.username%>'s  wall </h2>
 
+<div id="new-post" class="post">
+  <%= form_for @post do |form| %>
+    <%= form.label :message, "Create post" %>
+    <%= form.text_area :message, placeholder:"Your message here" %>
+  <%= form.hidden_field :wall_id, :value => @user.id %>
+    <%= form.submit "Submit" %>
+  <% end %>
+</div>
 
-
- <h2><%=  @user.username%>'s  wall </h2>
-
-<% @wall_posts.each do |post| %>
-  <ul>
-      <p><%= simple_format(post.message) %></p>
-      <p>Posted by: <%= post.user.username %></p>
-      <p><% time = post.created_at %></p>
-      <%= time.strftime("%k:%M on %d/%m/%Y") =%>
-      <p></p>
-      <br>
-  </ul>
-<% end %>
+<div id="posts-feed">
+  <% @wall_posts.each do |post| %>
+    <ul class="post">
+      <h4 class="post_username"><%= post.user.username %></h4>
+        <p><% time = post.created_at %></p>
+        <%= time.strftime("%k:%M on %d/%m/%Y") =%>
+        <p class="post-text"><%= simple_format(post.message) %></p>
+        <p></p>
+        <br>
+    </ul>
+  <% end %>
+</div>

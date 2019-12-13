@@ -1,3 +1,7 @@
+#wall-name {
+  margin: 5vh 5vw;
+}
+
 /* new post form */
 #new-post {
   display: flex;
