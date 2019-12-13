@@ -16,13 +16,8 @@ class PostsController < ApplicationController
   def edit
     @user = current_user
     @post = Post.find(params[:id])
-
-    # if @post.user_id != current_user.id # checks if user owns post
-    #   flash[:error] = "Don't touch other's posts! What do you want? "
-    #   redirect_to(posts_url) && return
-    # end
-      @post.update(post_params)
-      redirect_to posts_url
+    @post.update(post_params)
+    redirect_to posts_url
   end
 
   def index
@@ -38,6 +33,19 @@ class PostsController < ApplicationController
     @user = current_user
     @posts = current_user.posts.all.order(created_at: 'DESC')
   end
+
+  def destroy
+    @post = Post.find(params[:id])
+
+    if @post.user_id != current_user.id # checks if user owns post
+      flash[:error] = "Cannot delete other user's posts"
+      redirect_to(posts_url) && return
+    end
+
+   @post.destroy
+   redirect_to posts_url
+  end
+
 
   private
 
