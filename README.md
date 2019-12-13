@@ -1,40 +1,35 @@
 # AceBook - greenbook Ltd.
 
-
-![Screenshot 2019-12-13 at 12 10 04](https://user-images.githubusercontent.com/33905131/70799462-9da50800-1da1-11ea-88b8-71bd5c683567.png)
-
+<img width="1427" alt="Screenshot 2019-12-13 at 07 43 51" src="https://user-images.githubusercontent.com/33905131/70780128-a3d4bd80-1d7c-11ea-9017-af22aa718318.png">
 
 It’s a clone of a <ahem> well known social media platform. :laughing:
 
 
 ## Quickstart
-
-**Installation**
+### Installation
 First, clone this repository https://github.com/elfiyang16/acebook-greenbook. Then:
 
 ```
-  bash
-  > bundle install
-  > bin/rails db:create
-  > bin/rails db:migrate
+bash
+> bundle install
+> bin/rails db:create
+> bin/rails db:migrate
 
-  > bundle exec rspec # Run the tests to ensure it works
-  > bin/rails server # Start the server at localhost:3000
+> bundle exec rspec # Run the tests to ensure it works
+> bin/rails server # Start the server at localhost:3000
 ```
- **Heroku**
-
+### Heroku
 Sign up to Heroku, once you have an Heroku account you can run below commands:
 
 ```
-  brew install heroku
+brew install heroku
 ```
 
 ```
-  heroku create
-  git push heroku master
-  heroku rake db:migrate
-  heroku open
-
+heroku create
+git push heroku master
+heroku rake db:migrate
+heroku open
 ```
 
 ## Usages
@@ -47,7 +42,6 @@ Sign up to Heroku, once you have an Heroku account you can run below commands:
 ### Create Post
 ![acebk_create_new_post](https://user-images.githubusercontent.com/33905131/70790233-945d7080-1d8c-11ea-8590-cd2d77905ce3.gif)
 
-
 ### Edit Post
 ![acebk_edit_post](https://user-images.githubusercontent.com/33905131/70790468-0a61d780-1d8d-11ea-87c1-c476d28d6d3d.gif)
 
@@ -56,65 +50,66 @@ Sign up to Heroku, once you have an Heroku account you can run below commands:
 
 
 ## Requirements & cards implemented (and in Production):
-    ```
-    REQUIRED: Add CI/CD [L] (Part 1: Travis CI)
+```
+REQUIRED: Add CI/CD [L] (Part 1: Travis CI)
 
-    REQUIRED: AceBook should run on Heroku or AWS [MEDIUM]
+REQUIRED: AceBook should run on Heroku or AWS [MEDIUM]
 
-    REQUIRED: Add CI/CD [L] (Part 2: CD with Heroku)
+REQUIRED: Add CI/CD [L] (Part 2: CD with Heroku)
 
-    REQUIRED: Add Test Coverage, Code Quality, and Code Style checks [s]
+REQUIRED: Add Test Coverage, Code Quality, and Code Style checks [s]
 
-    User is redirected to their own wall when they log in [M]
+User is redirected to their own wall when they log in [M]
 
-    Develop basic styling for Acebook.
+Develop basic styling for Acebook.
 
-    Posts can have line breaks in them[M] -- tests pass
+Posts can have line breaks in them[M] -- tests pass
 
-    Setup blog [S] and make first post.
+Setup blog [S] and make first post.
 
-    Blog post about Travis CI [s]
+Blog post about Travis CI [s]
 
-    Users are recognised by a username [S]
+Users are recognised by a username [S]
 
-    Restyle posts [M]
+Restyle posts [M]
 
-    Fix bug: All posts say they're made by the current signed in user [S]
+Fix bug: All posts say they're made by the current signed in user [S]
 
-    Posts appear with newest post first [M] - waiting for tests
+Posts appear with newest post first [M] - waiting for tests
 
-    Users can update their own posts [L]
+Users can update their own posts [L]
 
-    Restyle the sign up page [M]
+Restyle the sign up page [M]
 
-    Restyle nav bar [M]
+Restyle nav bar [M]
 
-    Users cant edit other people's posts on the newsfeed (test) [S]
+Users cant edit other people's posts on the newsfeed (test) [S]
 
-    Posts show the date they were posted - waiting for tests
+Posts show the date they were posted - waiting for tests
 
-    User can create new post [L] - waiting for tests
+User can create new post [L] - waiting for tests
 
-    User can View new post [L](tests)
+User can View new post [L](tests)
 
-    Users can sign up [L] -- awaiting tests
+Users can sign up [L] -- awaiting tests
 
-    Users can sign in [M] -- awaiting tests
+Users can sign in [M] -- awaiting tests
 
-    Users can see their own posts [L]
+Users can see their own posts [L]
 
 ```
 
-## Processes observed
+##Processes observed
 
 ### standup
-Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was rotated daily & pairs on a per task/sprint basis.)
 ![IMG_0145](https://user-images.githubusercontent.com/33905131/70802830-71da5000-1daa-11ea-9dec-af479247412d.jpg)
+
+Daily stand-ups were held at 10:00hrs at the whiteboard (Scrummaster role was rotated daily & pairs on a per task/sprint basis.)
+
 
 ### Work breakdown
 Old school workbreakdown was done using post-stick notes.
 ![IMG_0112](https://user-images.githubusercontent.com/33905131/70786780-4c871b00-1d85-11ea-835f-6e02d3c10276.jpg)
-
 
 ### estimation
 T-shirt sizing was used to our task estimation and reviewed post-sprint for effectiveness.
